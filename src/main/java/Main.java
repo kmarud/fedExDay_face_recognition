@@ -50,7 +50,7 @@ public class Main {
     }
 
     public static void print(FindSimiliarResposne response) {
-        System.out.printf("Your user is probably %s with confidence %.2f %% %n",
+        System.out.printf("Your user is probably %s with confidence %.2f %% %n%n",
                 knownFaces.get(response.getFaceId()),
                 (response.getConfidence() * 100));
     }
