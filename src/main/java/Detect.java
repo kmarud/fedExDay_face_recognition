@@ -15,7 +15,7 @@ import java.net.URISyntaxException;
 public class Detect {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
-    private static final String subscriptionKey = "986190d8e9fc4573a42aebbc40df9b95";
+    private static final String subscriptionKey = System.getenv("FACE_SUBSCRIPTION_KEY");
     private static final String endpoint = "https://fedexfacefindsimilar.cognitiveservices.azure.com";
 
     public static String addKnownUser(String url) {
